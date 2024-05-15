@@ -6,8 +6,12 @@ import os
 # Function to get dates for the next two weeks
 def get_dates():
     today = datetime.today()
-    dates = [today + timedelta(days=i) for i in range(14)]
-    return [date.strftime("%Y-%m-%d") for date in dates]
+    dates = []
+    while len(dates) < 14:
+        if today.weekday() < 5:  # Monday (0) to Friday (4)
+            dates.append(today)
+        today += timedelta(days=1)
+    return [(date.strftime("%Y-%m-%d"), date.strftime("%A")) for date in dates]
 
 # Function to check and create CSV if not exists
 def check_and_create_csv(file_name, columns):
