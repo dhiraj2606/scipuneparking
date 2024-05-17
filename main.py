@@ -29,9 +29,9 @@ def init_csv():
 # Function to reset persons table with new names
 def reset_persons_table():
     data = [
-        ['Khushal', 'Parking 1'], ['Devdutt', 'Parking 1'],
+        ['Girish', 'Parking 1'], ['Dhiraj', 'Parking 1'],
         ['Mohit', 'Parking 2'], ['Bapurao', 'Parking 2'],
-        ['Girish', 'Parking 3'], ['Dhiraj', 'Parking 3'],
+        ['Khushal', 'Parking 3'], ['Devdutt', 'Parking 3'],
         ['Sanjay', 'Parking 4'], ['Amol', 'Parking 4'],
         ['Jagdish', 'Parking 5'], ['Vinayak', 'Parking 5']
     ]
