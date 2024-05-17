@@ -76,7 +76,7 @@ def main():
             parking_data = pd.DataFrame(index=parking_slots, columns=dates)
             for _, row in parking_data_df.iterrows():
                 parking_data.at[row['parking_slot'], row['date']] = row['person']
-            st.write("Parking Allotment Table")
+            st.write("Note : This app is still in testing")
             st.dataframe(parking_data.fillna(""))
         except FileNotFoundError:
             st.error("Parking data file not found. Please initialize data.")
