@@ -8,7 +8,7 @@ def get_dates():
     today = datetime.today()
     dates = []
     num_days = 0
-    while len(dates) < 14:
+    while len(dates) < 250:
         next_day = today + timedelta(days=num_days)
         if next_day.weekday() < 5:  # Monday(0) to Friday(4)
             dates.append(next_day.strftime("%Y-%m-%d"))
